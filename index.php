@@ -21,7 +21,8 @@
 
     printArr($numbers);
 
-    echo 'The largest number is ' . largest($numbers);
+    echo '<p>The largest number is ' . largest($numbers) . '<?p>';
+    echo '<p>The average is ' . average($numbers) . '<?p>';
 
     ?>
 

@@ -27,3 +27,15 @@ function largest($arr)
 
     return $max;
 }
+
+function average($arr)
+{
+    $sum = 0;
+
+    foreach ($arr as $num)
+    {
+        $sum += $num;
+    }
+
+    return $sum / sizeof($arr);
+}
