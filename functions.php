@@ -54,3 +54,23 @@ function removeDups($arr)
 
     return $newArr;
 }
+
+function distribution($arr)
+{
+    $newArr = array();
+
+    foreach($arr as $num)
+    {
+        if (!array_key_exists($num, $newArr))
+        {
+            $newArr[$num] = 1;
+        }
+        else
+        {
+            $newArr[$num]+= 1;
+        }
+    }
+
+    ksort($newArr);
+    return $newArr;
+}

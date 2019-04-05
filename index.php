@@ -24,7 +24,9 @@
     echo '<p>The largest number is ' . largest($numbers) . '<?p>';
     echo '<p>The average is ' . average($numbers) . '<?p>';
     echo '<p>The new array is: <?p>';
-    printArr(removeDups($numbers))
+    print_r(removeDups($numbers));
+    echo '<br>';
+    print_r(distribution($numbers));
 
     ?>
 
